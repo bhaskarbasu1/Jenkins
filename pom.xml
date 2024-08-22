@@ -92,19 +92,13 @@
     </dependencies>
 
     <build>
-        <!-- Other build configurations, if any, go here -->
-
         <plugins>
-            <!-- Surefire Plugin Configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
                 <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <reportsDirectory>target/testng-reports</reportsDirectory>
+                    <skip>true</skip>
                 </configuration>
             </plugin>
         </plugins>
