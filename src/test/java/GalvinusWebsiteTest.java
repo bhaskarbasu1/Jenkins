@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class GalvinusWebsite {
+public class GalvinusWebsiteTest {
 
     public static WebDriver mDriver;
 
