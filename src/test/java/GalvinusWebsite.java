@@ -14,7 +14,7 @@ public class GalvinusWebsite {
 
 
     @BeforeClass
-    void initializers(){
+    public void initializers(){
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
         mDriver = new ChromeDriver();
         mDriver.get("https://galvinus.com/");
@@ -23,7 +23,7 @@ public class GalvinusWebsite {
     }
 
     @Test(priority = 1)
-    void whatWeDoOption() throws InterruptedException {
+   public void whatWeDoOption() throws InterruptedException {
         WebElement whatWeDoDropDown = mDriver.findElement(By.xpath("//*[@id=\"menu-item-12230\"]/a"));
         Actions actions = new Actions(mDriver);
         actions.moveToElement(whatWeDoDropDown).perform();
@@ -32,18 +32,18 @@ public class GalvinusWebsite {
     }
 
     @Test(priority = 2)
-    void systemTesting() throws InterruptedException {
+    public void systemTesting() throws InterruptedException {
         mDriver.findElement(By.xpath("//*[@id=\"menu-item-12230\"]/div/div/div[1]/div/div[3]/div[2]/div[2]/div/ul/li/a/span")).click();
 
     }
 
     @Test(priority = 3)
-    void titleOfThePage() throws InterruptedException {
+   public void titleOfThePage() throws InterruptedException {
         System.out.println(mDriver.getTitle());
     }
 
     @Test(priority = 4)
-    void enterDetails() throws InterruptedException {
+    public void enterDetails() throws InterruptedException {
 
         mDriver.findElement(By.id("form-field-name")).sendKeys("Bhaskar");
         mDriver.findElement(By.id("form-field-email")).sendKeys("basubhaskar14@gmail.com");
@@ -58,13 +58,14 @@ public class GalvinusWebsite {
     }
 
     @Test(priority = 5)
-    void clickOnLogo() {
+    public void clickOnLogo() {
 
         mDriver.findElement(By.xpath("//*[@id=\"Objects\"]")).click();
     }
 
     @AfterClass
-    void closeTheBrowser(){
+    public void closeTheBrowser(){
+
         mDriver.quit();
     }
 }
