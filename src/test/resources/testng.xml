@@ -4,7 +4,7 @@
     <test name="Galvinus Website Test">
         <classes>
             <class name="com.sourceclass.OpeningGalvinusWebsiteTest"/>
-            <class name="com.testclass.ActionClassOfOpeningWebsite"/>
+            <class name="com.testclass.ActionClassOfOpeningWebsiteTest"/>
         </classes>
     </test>
 </suite>
