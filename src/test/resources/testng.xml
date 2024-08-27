@@ -3,7 +3,6 @@
 <suite name="All Test Suite">
     <test name="Galvinus Website Test">
         <classes>
-            <class name="com.sourceclass.OpeningGalvinusWebsiteTest"/>
             <class name="com.testclass.ActionClassOfOpeningWebsiteTest"/>
         </classes>
     </test>
