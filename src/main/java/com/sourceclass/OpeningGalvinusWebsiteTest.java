@@ -14,7 +14,7 @@ public class OpeningGalvinusWebsiteTest {
         this.mDriver=driver;
     }
 
-    By whatWeDoDropDown = By.xpath("//*[@id=\"menu-item-12230\"]/a");
+    public By whatWeDoDropDown = By.xpath("//*[@id=\"menu-item-12230\"]/a");
     public By systemTestingOption = By.xpath("//*[@id=\"menu-item-12230\"]/div/div/div[1]/div/div[3]/div[2]/div[2]/div/ul/li/a/span");
 
     By nameField = By.id("form-field-name");
