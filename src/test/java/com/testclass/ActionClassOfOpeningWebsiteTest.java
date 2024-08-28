@@ -29,16 +29,13 @@ public class ActionClassOfOpeningWebsiteTest {
     public void testWhatWeDoOption() throws InterruptedException {
 
         openingGalvinusWebsiteTest.navigateToWhatWeDo();
-      //  WebDriverWait wait = new WebDriverWait(mDriver, 10);
-       // wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.whatWeDoDropDown));
+
     }
 
     @Test(priority = 2)
     public void testSystemTesting() throws InterruptedException {
         openingGalvinusWebsiteTest.selectSystemTesting();
-      //  WebDriverWait wait = new WebDriverWait(mDriver, 10);
-       // wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.systemTestingOption));
-        //Thread.sleep(4000);
+
     }
 
     @Test(priority = 3)
@@ -48,9 +45,8 @@ public class ActionClassOfOpeningWebsiteTest {
     }
 
     @Test(priority = 4)
-    public void testEnterDetails() throws InterruptedException {
+    public void testEnterDetails() {
         openingGalvinusWebsiteTest.enterDetails("Bhaskar", "basubhaskar14@gmail.com", "Galvinus", "India", "123456789");
-        Thread.sleep(3000);
     }
 
     @Test(priority = 5)
