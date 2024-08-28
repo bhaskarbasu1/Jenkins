@@ -15,7 +15,7 @@ public class OpeningGalvinusWebsiteTest {
     }
 
     By whatWeDoDropDown = By.xpath("//*[@id=\"menu-item-12230\"]/a");
-    By systemTestingOption = By.xpath("//*[@id=\"menu-item-12230\"]/div/div/div[1]/div/div[3]/div[2]/div[2]/div/ul/li/a/span");
+    public By systemTestingOption = By.xpath("//*[@id=\"menu-item-12230\"]/div/div/div[1]/div/div[3]/div[2]/div[2]/div/ul/li/a/span");
 
     By nameField = By.id("form-field-name");
     By emailField = By.id("form-field-email");
