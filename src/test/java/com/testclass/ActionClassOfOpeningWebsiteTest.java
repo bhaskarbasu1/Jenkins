@@ -15,6 +15,7 @@ public class ActionClassOfOpeningWebsiteTest {
     public static WebDriver mDriver;
     public static OpeningGalvinusWebsiteTest openingGalvinusWebsiteTest;
 
+
     @BeforeClass
     public void initializers() {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -29,12 +30,14 @@ public class ActionClassOfOpeningWebsiteTest {
 
         openingGalvinusWebsiteTest.navigateToWhatWeDo();
         WebDriverWait wait = new WebDriverWait(mDriver, 10);
-        wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.systemTestingOption));
+        wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.whatWeDoDropDown));
     }
 
     @Test(priority = 2)
     public void testSystemTesting() throws InterruptedException {
         openingGalvinusWebsiteTest.selectSystemTesting();
+        WebDriverWait wait = new WebDriverWait(mDriver, 10);
+        wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.systemTestingOption));
         Thread.sleep(4000);
     }
 
@@ -52,6 +55,7 @@ public class ActionClassOfOpeningWebsiteTest {
 
     @Test(priority = 5)
     public void testClickOnLogo() {
+
         openingGalvinusWebsiteTest.clickOnLogo();
     }
 
