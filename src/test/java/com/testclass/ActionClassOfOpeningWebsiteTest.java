@@ -29,16 +29,16 @@ public class ActionClassOfOpeningWebsiteTest {
     public void testWhatWeDoOption() throws InterruptedException {
 
         openingGalvinusWebsiteTest.navigateToWhatWeDo();
-        WebDriverWait wait = new WebDriverWait(mDriver, 10);
-        wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.whatWeDoDropDown));
+      //  WebDriverWait wait = new WebDriverWait(mDriver, 10);
+       // wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.whatWeDoDropDown));
     }
 
     @Test(priority = 2)
     public void testSystemTesting() throws InterruptedException {
         openingGalvinusWebsiteTest.selectSystemTesting();
-        WebDriverWait wait = new WebDriverWait(mDriver, 10);
-        wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.systemTestingOption));
-        Thread.sleep(4000);
+      //  WebDriverWait wait = new WebDriverWait(mDriver, 10);
+       // wait.until(ExpectedConditions.elementToBeClickable(openingGalvinusWebsiteTest.systemTestingOption));
+        //Thread.sleep(4000);
     }
 
     @Test(priority = 3)

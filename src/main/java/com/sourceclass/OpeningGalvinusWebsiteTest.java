@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OpeningGalvinusWebsiteTest {
 
@@ -32,7 +34,9 @@ public class OpeningGalvinusWebsiteTest {
     }
 
     public void selectSystemTesting() {
-        mDriver.findElement(systemTestingOption).click();
+        WebDriverWait wait = new WebDriverWait(mDriver,15);
+        wait.until(ExpectedConditions.elementToBeClickable(systemTestingOption)).click();
+
     }
 
     public String getPageTitle() {
