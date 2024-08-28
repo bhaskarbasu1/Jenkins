@@ -28,13 +28,18 @@ public class OpeningGalvinusWebsiteTest {
 
     public void navigateToWhatWeDo() {
         Actions actions = new Actions(mDriver);
+        WebDriverWait wait = new WebDriverWait(mDriver, 20);
+
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(whatWeDoDropDown));
+
         WebElement element = mDriver.findElement(whatWeDoDropDown);
         actions.moveToElement(element).perform();
         element.click();
     }
 
     public void selectSystemTesting() {
-        WebDriverWait wait = new WebDriverWait(mDriver,15);
+        WebDriverWait wait = new WebDriverWait(mDriver,20);
         wait.until(ExpectedConditions.elementToBeClickable(systemTestingOption)).click();
 
     }
@@ -51,6 +56,7 @@ public class OpeningGalvinusWebsiteTest {
         select.selectByValue(country);
         mDriver.findElement(phoneField).sendKeys(phone);
     }
+
 
     public void clickOnLogo() {
         mDriver.findElement(logo).click();
