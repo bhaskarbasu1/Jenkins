@@ -25,31 +25,31 @@ public class ActionClassOfOpeningWebsiteTest {
         mDriver.manage().window().maximize();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, description = "SCRUM-T1: Verify 'What We Do' option")
     public void testWhatWeDoOption() throws InterruptedException {
 
         openingGalvinusWebsiteTest.navigateToWhatWeDo();
 
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, description = "SCRUM-T1: Select 'System Testing'")
     public void testSystemTesting() throws InterruptedException {
         openingGalvinusWebsiteTest.selectSystemTesting();
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, description = "SCRUM-T1: Verify page title")
     public void testTitleOfThePage() throws InterruptedException {
         System.out.println(openingGalvinusWebsiteTest.getPageTitle());
         Thread.sleep(3000);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, description = "SCRUM-T1: Enter details in the form")
     public void testEnterDetails() {
         openingGalvinusWebsiteTest.enterDetails("Bhaskar", "basubhaskar14@gmail.com", "Galvinus", "India", "123456789");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, description = "SCRUM-T1: Click on the Galvinus logo")
     public void testClickOnLogo() {
 
         openingGalvinusWebsiteTest.clickOnLogo();
