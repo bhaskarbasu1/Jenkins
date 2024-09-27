@@ -13,6 +13,7 @@ public class OpeningGalvinusWebsiteTest {
     WebDriver mDriver;
 
     public OpeningGalvinusWebsiteTest(WebDriver driver){
+
         this.mDriver=driver;
     }
 
@@ -41,10 +42,10 @@ public class OpeningGalvinusWebsiteTest {
     public void selectSystemTesting() {
         WebDriverWait wait = new WebDriverWait(mDriver,20);
         wait.until(ExpectedConditions.elementToBeClickable(systemTestingOption)).click();
-
     }
 
     public String getPageTitle() {
+
         return mDriver.getTitle();
     }
 
@@ -59,6 +60,7 @@ public class OpeningGalvinusWebsiteTest {
 
 
     public void clickOnLogo() {
+
         mDriver.findElement(logo).click();
     }
 }
