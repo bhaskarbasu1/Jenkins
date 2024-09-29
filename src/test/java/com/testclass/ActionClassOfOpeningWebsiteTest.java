@@ -26,37 +26,7 @@ public class ActionClassOfOpeningWebsiteTest {
     }
 
     @Test(priority = 1)
-    public void testWhatWeDoOption() throws InterruptedException {
-
-        openingGalvinusWebsiteTest.navigateToWhatWeDo();
-
-    }
-
-    @Test(priority = 2)
-    public void testSystemTesting() throws InterruptedException {
-        openingGalvinusWebsiteTest.selectSystemTesting();
-
-    }
-
-    @Test(priority = 3)
-    public void testTitleOfThePage() throws InterruptedException {
-        System.out.println(openingGalvinusWebsiteTest.getPageTitle());
-        Thread.sleep(3000);
-    }
-
-    @Test(priority = 4)
-    public void testEnterDetails() {
-        openingGalvinusWebsiteTest.enterDetails("Bhaskar", "basubhaskar14@gmail.com", "Galvinus", "India", "123456789");
-    }
-
-    @Test(priority = 5)
-    public void testClickOnLogo() {
-
-        openingGalvinusWebsiteTest.clickOnLogo();
-    }
-
-    @AfterClass
-    public void closeTheBrowser() {
-        mDriver.quit();
+    public void pageTitle(){
+          openingGalvinusWebsiteTest.getMainPageTitle();
     }
 }
