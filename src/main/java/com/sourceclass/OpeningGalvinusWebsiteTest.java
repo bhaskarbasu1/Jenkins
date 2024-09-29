@@ -33,7 +33,7 @@ public class OpeningGalvinusWebsiteTest {
     }
 
     public void navigateToWhatWeDo() {
-       // Actions actions = new Actions(mDriver);
+
         WebDriverWait wait = new WebDriverWait(mDriver, 30);
 
 
@@ -42,7 +42,6 @@ public class OpeningGalvinusWebsiteTest {
         boolean element = mDriver.findElement(whatWeDoDropDown).isDisplayed();
         System.out.println(element);
         mDriver.findElement(whatWeDoDropDown).click();
-        //actions.moveToElement(element).perform();
-        //element.click();
+
     }
 }
