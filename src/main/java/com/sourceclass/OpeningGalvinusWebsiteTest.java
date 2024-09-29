@@ -32,5 +32,15 @@ public class OpeningGalvinusWebsiteTest {
         System.out.println(title);
     }
 
+    public void navigateToWhatWeDo() {
+        Actions actions = new Actions(mDriver);
+        WebDriverWait wait = new WebDriverWait(mDriver, 30);
 
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(whatWeDoDropDown));
+
+        WebElement element = mDriver.findElement(whatWeDoDropDown);
+        actions.moveToElement(element).perform();
+        element.click();
+    }
 }
