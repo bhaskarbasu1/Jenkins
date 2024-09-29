@@ -1,6 +1,7 @@
 package com.sourceclass;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -33,15 +34,19 @@ public class OpeningGalvinusWebsiteTest {
     }
 
     public void navigateToWhatWeDo() {
-
         WebDriverWait wait = new WebDriverWait(mDriver, 30);
 
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(whatWeDoDropDown));
 
-        boolean element = mDriver.findElement(whatWeDoDropDown).isDisplayed();
-        System.out.println(element);
-        mDriver.findElement(whatWeDoDropDown).click();
 
+        WebElement whatWeDoElement = mDriver.findElement(whatWeDoDropDown);
+        ((JavascriptExecutor) mDriver).executeScript("arguments[0].scrollIntoView(true);", whatWeDoElement);
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(whatWeDoDropDown));
+
+
+        whatWeDoElement.click();
     }
 }
