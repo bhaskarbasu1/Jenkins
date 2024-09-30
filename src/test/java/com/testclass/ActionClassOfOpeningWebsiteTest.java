@@ -25,7 +25,7 @@ public class ActionClassOfOpeningWebsiteTest {
         mDriver.manage().window().maximize();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, description = "ETA-T1: Verify website main page title")
     public void pageTitle(){
           openingGalvinusWebsiteTest.getMainPageTitle();
     }
