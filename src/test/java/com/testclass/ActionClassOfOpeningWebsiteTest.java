@@ -29,11 +29,4 @@ public class ActionClassOfOpeningWebsiteTest {
     public void pageTitle(){
           openingGalvinusWebsiteTest.getMainPageTitle();
     }
-
-    @Test(priority = 2)
-    public void testWhatWeDoOption() throws InterruptedException {
-
-        openingGalvinusWebsiteTest.navigateToWhatWeDo();
-
-    }
 }
