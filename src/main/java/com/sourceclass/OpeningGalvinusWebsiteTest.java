@@ -28,9 +28,9 @@ public class OpeningGalvinusWebsiteTest {
     By phoneField = By.xpath("//*[@id=\"form-field-field_fb170dd\"]");
     By logo = By.xpath("//*[@id=\"Objects\"]");
 
-    public void getMainPageTitle(){
-        String title = mDriver.getTitle();
-        System.out.println(title);
+    public String getMainPageTitle(){
+        return mDriver.getTitle();
+
     }
 
 
