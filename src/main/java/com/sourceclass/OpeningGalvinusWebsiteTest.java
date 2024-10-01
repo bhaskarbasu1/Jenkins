@@ -13,9 +13,9 @@ public class OpeningGalvinusWebsiteTest {
 
     WebDriver mDriver;
 
-    public OpeningGalvinusWebsiteTest(WebDriver driver){
+    public OpeningGalvinusWebsiteTest(WebDriver driver) {
 
-        this.mDriver=driver;
+        this.mDriver = driver;
     }
 
     public By whatWeDoDropDown = By.xpath("//*[@id=\"menu-item-12230\"]/a");
@@ -28,10 +28,8 @@ public class OpeningGalvinusWebsiteTest {
     By phoneField = By.xpath("//*[@id=\"form-field-field_fb170dd\"]");
     By logo = By.xpath("//*[@id=\"Objects\"]");
 
-    public String getMainPageTitle(){
+    public String getMainPageTitle() {
         return mDriver.getTitle();
 
     }
-
-
 }
